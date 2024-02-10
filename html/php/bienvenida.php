@@ -6,6 +6,6 @@
     <title>Bienvenida </title>
 </head>
 <body>
-    <H1>Bienvenido a Fonda PatioBonito</H1>
+    <H1>Inicio Patio Bonito</H1>
 </body>
 </html>
