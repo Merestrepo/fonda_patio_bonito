@@ -7,20 +7,6 @@
     font-family: 'Roboto', sans-serif;
     
 }
-    
-    
-    
-    .contenedor_principal{
-        width: 100%;
-        max-width: 800px;
-        margin: auto;
-        position: relative;
-        background-color: cornsilk;
-    }
-
-
-
-
 /* Navbar Bootstrap */
 
 .navbar-icon-top .navbar-nav .nav-link > .fa {
@@ -141,5 +127,94 @@
   
 }
 /* Navbar Bootstrap */
+
+
+body{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-color: rgb(249, 251, 251);
+color: rgb(16, 15, 15);
+  main{
+    margin-bottom: 10dvh;
+  }
+}
+.contenedor__todo {
+  width: 80%;
+  margin: 20px auto;
+  background-color: #fefefe;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.caja__mensaje {
+  text-align: center;
+}
+
+.caja__inventario {
+  margin-top: 20px;
+}
+
+.contenedor__busquedas{
+  text-align: center;
+
+  #listaBusquedas{
+    display: flex;
+    justify-content: space-evenly;
+
+    .caja__cuarta-bolita{
+      background-color: #4a0528;
+    }
+    .caja__tercer-bolita{
+      background-color: #031e08;
+    }
+    .caja__segunda-bolita{
+      background-color: #2e2803;
+    }
+    .caja__primer-bolita{
+      background-color: #0d0329;
+    }
+  }
+
+  .cajas{
+    width: 15dvw;
+    height: 25dvh;
+    border-radius: 100%;
+    padding: 5%;
+    color: #fefefe;
+    font-weight: bold;
+
+  }
+
+}
+
+#ventas{
+  text-align: center;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+   
+    .texto_totales{
+      width: 25dvw;
+    }
+
+    .totales{
+      width: 25dvw;
+    }
+
+  .cajas{
+    text-align: right;
+  }
+
+  .totales{
+    .cajas{
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+
+
+
 
 

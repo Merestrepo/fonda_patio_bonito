@@ -76,3 +76,35 @@ function registro() {
 
     }
 }
+
+// document.addEventListener("DOMContentLoaded", function () {
+//     var ultimasBusquedas = [];
+
+//     function actualizarListaBusquedas() {
+//         var listaBusquedas = document.getElementById("listaBusquedas");
+//         listaBusquedas.innerHTML = ""; // Limpiar la lista
+
+//         for (var i = 0; i < ultimasBusquedas.length; i++) {
+//             var listItem = document.createElement("li");
+//             listItem.textContent = ultimasBusquedas[i];
+//             listaBusquedas.appendChild(listItem);
+//         }
+//     }
+
+//     function agregarBusqueda(busqueda) {
+//         if (ultimasBusquedas.length >= 3) {
+//             ultimasBusquedas.shift(); // Eliminar la primera búsqueda
+//         }
+
+//         ultimasBusquedas.push(busqueda);
+//         actualizarListaBusquedas();
+//     }
+
+//     // Ejemplo de uso: agregar una búsqueda
+//     agregarBusqueda("Búsqueda 1");
+//     agregarBusqueda("Búsqueda 2");
+//     agregarBusqueda("Búsqueda 3");
+
+//     // Puedes llamar a agregarBusqueda() cuando el usuario realiza una nueva búsqueda
+// });
+
