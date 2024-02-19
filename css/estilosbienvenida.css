@@ -164,6 +164,11 @@
 
  }
 
+ .mensaje p{
+  color: #0c0b0b;
+  font-size: 1.3rem;
+ }
+
 .caja__inventario {
   width: 38dvw;
   display: flex;
@@ -207,7 +212,7 @@
     justify-content: space-evenly;
 
     .caja__cuarta-bolita{
-      background-color: #b23e93;
+      background-color: #314da7;
       top: -2dvw;
      
       
@@ -218,7 +223,7 @@
       
     }
     .caja__segunda-bolita{
-      background-color: #b23e93;
+      background-color: #314da7;
       top: -2dvw;
     
     
@@ -234,17 +239,13 @@
     width: 20dvw;
     height: 25dvh;
     border-radius: 10%;
-    padding: 5%;
+    padding: 3%;
     color: #0c0b0b;
     font-weight: bold;
    position: relative;
    box-shadow: 0px 0px 20px;
-
-
-  }
-
 }
-
+}
 
 
 
