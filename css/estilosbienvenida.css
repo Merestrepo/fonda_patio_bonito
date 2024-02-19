@@ -129,89 +129,125 @@
 /* Navbar Bootstrap */
 
 
-body{
-font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-background-color: rgb(249, 251, 251);
-color: rgb(16, 15, 15);
-  main{
-    margin-bottom: 10dvh;
-  }
-}
+
 .contenedor__todo {
-  width: 80%;
-  margin: 20px auto;
-  background-color: #fefefe;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  
+  background-color: #6b6565;
+  display: flex;
+  color: #fefefe;
+  height: 35dvh;
+  position: relative;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background-image: url(../img/fondo.jpeg);
+  background-repeat: no-repeat ;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
 }
+
+
+
 
 .caja__mensaje {
   text-align: center;
+  display: flex;
+    font-family: serif;
+
 }
 
+.caja__mensaje h1{
+  font-size: 5.5rem;
+  color: #060505;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+ }
+
 .caja__inventario {
-  margin-top: 20px;
+  width: 38dvw;
+  display: flex;
+  justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    color: #060505;
 }
+
+
+
+
+
+.boton:hover{
+  background: #030330;
+    color: #f3dfdf;
+}
+
+.boton{
+  padding: 5px 20px;
+  border: 2px solid #060505;
+  background: transparent;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  outline: none;
+  transition: all 300ms;
+  border-radius: 20px;
+}
+
 
 .contenedor__busquedas{
   text-align: center;
+  background-color: rgb(130, 130, 128);
+  height: 45dvh;
+  position: relative;
+
 
   #listaBusquedas{
     display: flex;
     justify-content: space-evenly;
 
     .caja__cuarta-bolita{
-      background-color: #4a0528;
+      background-color: #b23e93;
+      top: -2dvw;
+     
+      
     }
     .caja__tercer-bolita{
-      background-color: #031e08;
+      background-color: #ddece0;
+      top: -2dvw;
+      
     }
     .caja__segunda-bolita{
-      background-color: #2e2803;
+      background-color: #b23e93;
+      top: -2dvw;
+    
+    
     }
     .caja__primer-bolita{
-      background-color: #0d0329;
+      background-color: #ddece0;
+      top: -2dvw;   
+      
     }
   }
 
   .cajas{
-    width: 15dvw;
+    width: 20dvw;
     height: 25dvh;
-    border-radius: 100%;
+    border-radius: 10%;
     padding: 5%;
-    color: #fefefe;
+    color: #0c0b0b;
     font-weight: bold;
+   position: relative;
+   box-shadow: 0px 0px 20px;
+
 
   }
 
 }
 
-#ventas{
-  text-align: center;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-   
-    .texto_totales{
-      width: 25dvw;
-    }
 
-    .totales{
-      width: 25dvw;
-    }
 
-  .cajas{
-    text-align: right;
-  }
 
-  .totales{
-    .cajas{
-      display: flex;
-      justify-content: space-between;
-    }
-  }
-}
 
 
 

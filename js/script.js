@@ -14,6 +14,8 @@ document.addEventListener('click', function (event) {
 
 window.addEventListener("resize", anchoPagina);
 
+//prueba
+
 //Declaración de variables
 var contenedor_login_registro = document.querySelector(".contenedor__login-registro");
 var formulario_login = document.querySelector(".formulario__login");

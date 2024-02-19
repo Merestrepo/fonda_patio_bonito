@@ -98,54 +98,43 @@
     </nav>
 
     <div class="contendor__bienvenida">
-    <main>
       <div class="contenedor__todo">
         <div class="caja__mensaje">
-          <h1>FONDA PATIOBONITO</h1>
-          <h2>¡Hola Maria, te damos la bienvenida!</h2>
-          <div class="caja__inventario">
-            <h4>Revisa tu inventario</h4>
-            <button id="btnIrAPagina">Ver más</button>
+          <h1>FONDA PATIO-BONITO</h1>
+          
+        </div>
+      <div class="caja__inventario">
+          <div class="interno">
+
+            <div class="boton" button id="btnIrAPagina">Ver más</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
+
+    
+
+    <main>
+      <div class="contenedor__busquedas">
+        
+        <div id="listaBusquedas">
+          <div class="caja__primer-bolita cajas">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing,</p>
+          </div>
+          <div class="caja__segunda-bolita cajas">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, </p>
+          </div>
+          <div class="caja__tercer-bolita cajas">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, </p>
+          </div>
+          <div class="caja__cuarta-bolita cajas">
+            <p>Lorem ipsum dolor sit amet consectetur adipiscing, </p>
           </div>
         </div>
       </div>
     </main>
 
-    <main>
-      <div class="contenedor__busquedas">
-        <h4>Últimas Búsquedas</h4>
-        <div id="listaBusquedas">
-          <div class="caja__primer-bolita cajas">
-            <p>Primer busqueda</p>
-          </div>
-          <div class="caja__segunda-bolita cajas">
-            <p>segunda busqueda</p>
-          </div>
-          <div class="caja__tercer-bolita cajas">
-            <p>tercer busqueda</p>
-          </div>
-          <div class="caja__cuarta-bolita cajas">
-            <p>cuarta busqueda</p>
-          </div>
-        </div>
-      </div>
-    </main>
-    <div id="ventas">
-          <div class="texto_totales">
-            <h2>Total de Ventas</h2>
-          </div>
-      <div class="totales">
-          <div class="ventas_dia cajas">
-            <h5>Total ventas por día</h5>
-            <p id="ventasdia">$20000</p>
-          </div>
-          <div class="ventas_mes cajas">
-            <h5>Total ventas por mes</h5>
-            <p id="ventasmes">$200000</p>
-          </div>
-      </div>
-    </div>
-    </div>
   </body>
   <script src="js/script.js"></script>
 </html>
