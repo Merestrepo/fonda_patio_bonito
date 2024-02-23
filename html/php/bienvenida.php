@@ -108,8 +108,10 @@
       <div class="caja__inventario">
           <div class="interno">
 
-            <div class="boton" button id="btnIrAPagina">Ver más</button>
-            </div>
+            <div class="boton"> 
+              <button href="inventario.php" >Ver más</button>
+            
+          </div>
           </div>
         </div>
       </div>
@@ -135,7 +137,11 @@
           </div>
         </div>
       </div>
-    </main>
+    </main> 
+
+<div id="miBienvenida" class="bienvenida">
+  <p class="logo"><span>M</p>
+</div>
 
   </body>
   <script src="js/script.js"></script>
