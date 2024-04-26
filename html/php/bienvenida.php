@@ -107,11 +107,6 @@
         </div>
       <div class="caja__inventario">
           <div class="interno">
-
-            <div class="boton"> 
-              <button href="inventario.php" >Ver más</button>
-            
-          </div>
           </div>
         </div>
       </div>
