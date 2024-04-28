@@ -100,7 +100,7 @@
     <div class="contendor__bienvenida">
       <div class="contenedor__todo">
         <div class="caja__mensaje">
-          <h1> Fonda Patio-Bonito</h1>
+          <h1> Hola, Maria</h1>
         </div>
         <div class="mensaje">
           <p></p>
@@ -119,16 +119,16 @@
         
         <div id="listaBusquedas">
           <div class="caja__primer-bolita cajas">
-            <p>Controla tus inventarios de manera efectiva, lleva un seguimiento detallado de tus productos y optimiza tus procesos logísticos.,</p>
+            
           </div>
           <div class="caja__segunda-bolita cajas">
-            <p>Mantén un control total de tus transacciones financieras, genera informes detallados y toma decisiones informadas para el crecimiento de tu empresa. </p>
+            
           </div>
           <div class="caja__tercer-bolita cajas">
-            <p>Nuestra plataforma es accesible desde cualquier lugar y en cualquier momento. Ya sea en la oficina o en movimiento, tendrás el control total de tu negocio. </p>
+            
           </div>
           <div class="caja__cuarta-bolita cajas">
-            <p>Optimiza tus procesos de ventas, desde la generación de leads hasta la conversión, para impulsar el crecimiento de tu negocio. </p>
+           
           </div>
         </div>
       </div>

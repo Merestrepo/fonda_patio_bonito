@@ -132,35 +132,37 @@
 
 .contenedor__todo {
   
-  background-color: #6b6565;
+ 
   display: flex;
-  color: #fefefe;
-  height: 35dvh;
+  background-color:rgb(234, 240, 241);;
+  height: 45dvh;
   position: relative;
   align-items: center;
   justify-content: space-evenly;
-  flex-direction: column;
-  background-image: url(../img/fondo.jpeg);
-  background-repeat: no-repeat ;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
+  background-image: url(../img/liIHDiAvRWGKfoy1zdwU-Q.jpg);
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: 30%;
+
+
 }
+
+
 
 
 
 
 .caja__mensaje {
-  text-align: center;
-  display: flex;
-    font-family: serif;
+  text-align: left;
+
+    
 
 }
 
 .caja__mensaje h1{
-  font-size: 5.5rem;
-  color: #060505;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 3.5rem;
+  color: #030404;
+  font-family: cursive
 
  }
 
@@ -202,7 +204,7 @@
 
 .contenedor__busquedas{
   text-align: center;
-  background-color: rgb(130, 130, 128);
+  background-color: rgb(234, 240, 241);
   height: 45dvh;
   position: relative;
 
@@ -212,24 +214,24 @@
     justify-content: space-evenly;
 
     .caja__cuarta-bolita{
-      background-color: #314da7;
+      background-color: #c6ce2d;
       top: -2dvw;
      
       
     }
     .caja__tercer-bolita{
-      background-color: #ddece0;
+      background-color: #390950;
       top: -2dvw;
       
     }
     .caja__segunda-bolita{
-      background-color: #314da7;
+      background-color: #ce1961;
       top: -2dvw;
     
     
     }
     .caja__primer-bolita{
-      background-color: #ddece0;
+      background-color: #ecc2ef;
       top: -2dvw;   
       
     }

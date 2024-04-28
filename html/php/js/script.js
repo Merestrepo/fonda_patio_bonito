@@ -63,22 +63,42 @@ function cerrarVentanaEmergente() {
   document.getElementById("contenedorModal").style.display = "none";
 }
 
+//Eliminar producto
+
+var xhttp = new XMLHttpRequest();
+
+
+xhttp.onreadystatechange = function () {
+  if (this.readyState == 4 && this.status == 200) {
+    // Mostrar una alerta con la respuesta del servidor
+    alert(this.responseText);
+
+
+  }
+};
 function eliminarProducto(id_producto){
+  if (confirm("¿Quieres eliminar el producto?")) {
+     
+      
+      // Establecer los detalles de la solicitud
+      xhttp.open("POST", "eliminar_producto.php", true);
+      xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+      
+      // Enviar los datos del formulario al servidor
+      xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+              // Recibir la respuesta del servidor
+              console.log(this.responseText);
+              // Recargar la página después de eliminar el producto
 
-if (confirm("¿Quieres eliminar el producto?") == true) {
-  console.log(id_producto)
-
-  // Establecer los detalles de la solicitud
-  xhttp.open("POST", "eliminar_producto.php", true);
-  xhttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-  // Enviar los datos del formulario al servidor
-  xhttp.send("id_producto=" + id_producto);
-
-  setTimeout(() => {
-    location.reload();
-  }, 2000)
-
-} else {
-  console.log("Cancelado");
+              setTimeout(() => {
+                location.reload();
+              }, 2000)
+          }
+      };
+      
+      // Enviar el ID del producto al servidor
+      xhttp.send("ID_Producto=" + id_producto);
+  }
 }
-}
+
