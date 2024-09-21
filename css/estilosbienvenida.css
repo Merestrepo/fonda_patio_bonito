@@ -130,130 +130,63 @@
 
 
 
-.contenedor__todo {
-  
- 
+
+.arriba{
   display: flex;
-  background-color:rgb(234, 240, 241);;
-  height: 45dvh;
+  justify-content: space-between;
+  background-color: #d8d8d6;
+  height: 30dvh;
   position: relative;
+  margin-top: 30px;
   align-items: center;
-  justify-content: space-evenly;
-  background-image: url(../img/liIHDiAvRWGKfoy1zdwU-Q.jpg);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-size: 30%;
-
-
-}
-
-
-
-
-
-
-.caja__mensaje {
-  text-align: left;
-
-    
-
-}
-
-.caja__mensaje h1{
-  font-size: 3.5rem;
-  color: #030404;
-  font-family: cursive
-
- }
-
- .mensaje p{
-  color: #0c0b0b;
-  font-size: 1.3rem;
- }
-
-.caja__inventario {
-  width: 38dvw;
-  display: flex;
-  justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: row;
-    color: #060505;
-}
-
-
-
-
-
-.boton:hover{
-  background: #030330;
-    color: #f3dfdf;
-}
-
-.boton{
-  padding: 5px 20px;
-  border: 2px solid #060505;
-  background: transparent;
-  font-size: 14px;
-  font-weight: 600;
-  cursor: pointer;
-  outline: none;
-  transition: all 300ms;
-  border-radius: 20px;
-}
-
-
-.contenedor__busquedas{
+  margin: 20px;
+  padding: 10px;
+  border-radius: 30px;
   text-align: center;
-  background-color: rgb(234, 240, 241);
-  height: 45dvh;
-  position: relative;
 
-
-  #listaBusquedas{
-    display: flex;
-    justify-content: space-evenly;
-
-    .caja__cuarta-bolita{
-      background-color: #c6ce2d;
-      top: -2dvw;
-     
-      
-    }
-    .caja__tercer-bolita{
-      background-color: #390950;
-      top: -2dvw;
-      
-    }
-    .caja__segunda-bolita{
-      background-color: #ce1961;
-      top: -2dvw;
-    
-    
-    }
-    .caja__primer-bolita{
-      background-color: #ecc2ef;
-      top: -2dvw;   
-      
-    }
-  }
-
-  .cajas{
-    width: 20dvw;
-    height: 25dvh;
-    border-radius: 10%;
-    padding: 3%;
-    color: #0c0b0b;
-    font-weight: bold;
-   position: relative;
-   box-shadow: 0px 0px 20px;
 }
+
+.img{
+  vertical-align: middle;
+  border-style: none;
+  
+}
+.img img {
+  width: 260px; 
+  height: auto; 
+}
+
+.textos {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  
+}
+
+.textos h1 {
+  font-size: 80px;
+  font-weight: bold;
+  
+}
+
+.textos h3 {
+  font-size: 30px;
+  font-style: italic;
+  
+
+}
+
+.medio {
+  display: flex;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: space-around;
+    height: 15dvh;
 }
 
 
 
+.abajo{
+  background-color: #381c47;
 
-
-
-
-
+}
 
