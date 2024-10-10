@@ -131,62 +131,122 @@
 
 
 
-.arriba{
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #e7d3d5;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilo del contenedor principal */
+.dashboard {
+  display: flex;
+  max-width: 1200px;
+  margin: 30px auto;
+  gap: 20px;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+  width: 300px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h4 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.card-info {
   display: flex;
   justify-content: space-between;
-  background-color: #d8d8d6;
-  height: 30dvh;
-  position: relative;
-  margin-top: 30px;
   align-items: center;
-  margin: 20px;
-  padding: 10px;
-  border-radius: 30px;
-  text-align: center;
-
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
-.img{
-  vertical-align: middle;
-  border-style: none;
-  
-}
-.img img {
-  width: 260px; 
-  height: auto; 
+.card-info h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #333;
 }
 
-.textos {
-  font-family: "Arial", sans-serif;
-  text-align: center;
-  
+.card-info i {
+  color: #6a82fb;
 }
 
-.textos h1 {
-  font-size: 80px;
-  font-weight: bold;
-  
-}
-
-.textos h3 {
-  font-size: 30px;
-  font-style: italic;
-  
-
-}
-
-.medio {
+.actions {
   display: flex;
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    justify-content: space-around;
-    height: 15dvh;
+  justify-content: center;
 }
 
-
-
-.abajo{
-  background-color: #381c47;
-
+.actions button {
+  background-color: #6a82fb;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
+.actions button:hover {
+  background-color: #ff6f91;
+}
+
+/* Estilos del contenido principal */
+.main-content {
+  flex-grow: 1;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h3 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* Estilos para los gráficos circulares */
+.circle-chart {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.circle:nth-child(1) {
+  background-color: #f491a8;
+}
+
+.circle:nth-child(2) {
+  background-color: #adb8ee;
+}
+
+.circle:nth-child(3) {
+  background-color: #f4cea9;
+}

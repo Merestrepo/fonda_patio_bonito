@@ -55,6 +55,14 @@
                         Categorías
                     </a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="ventas/venta.php">
+                        <i class="fa fa-money" aria-hidden="true">
+                            <span class="badge badge-danger"></span>
+                        </i>
+                        Venta
+                    </a>
+                </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -69,21 +77,39 @@
     </div>
   </nav>
 
-  <div class="arriba">
-    <div class="textos">
-      <h1>Hola, Maria</h1>
-      <h3>¿Estás lista?</h3>
-    </div>
-    <div class="img">
-      <img src="../../img/publicdomainq-0004805sqegna.svg" alt="" srcset="">
-    </div>
-  </div>
+  <div class="dashboard">
+        <div class="sidebar">
+            <h4>Ventas</h4>
+            <div class="card-info">
+                <h2>$2,200</h2>
+                <i class="fas fa-credit-card fa-2x"></i>
+            </div>
+            <div class="card-info">
+                <h2>$12,029</h2>
+                <i class="fas fa-wallet fa-2x"></i>
+            </div>
+            <div class="actions">
+                <button>Decargar</button>
+            
+            </div>
+        </div>
+
+        <div class="main-content">
+            <h3>Dashboard</h3>
+            <div class="circle-chart">
+                <div class="circle" style="background-color:#ff6f91;">
+                    $1,392 <br> Ventas
+                </div>
+                <div class="circle" style="background-color:#6a82fb;">
+                     <br> Servicios
+                </div>
+                <div class="circle" style="background-color:#ff9f43;">
+                    49<br> Clientes
+                </div>
+            </div>
 
 
-
-
-
-
+    
 </body>
 <script src="js/script.js"></script>
 

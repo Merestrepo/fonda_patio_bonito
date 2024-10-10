@@ -20,6 +20,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
                 <a class="nav-link" href="../bienvenida.php">
                     <i class="fa fa-home"></i>
                     Inicio
@@ -48,6 +49,14 @@
                             <span class="badge badge-danger"></span>
                         </i>
                         Categorías
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../ventas/venta.php">
+                        <i class="fa fa-money" aria-hidden="true">
+                            <span class="badge badge-danger"></span>
+                        </i>
+                        Venta
                     </a>
                 </li>
             </ul>
