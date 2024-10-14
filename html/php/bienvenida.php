@@ -26,7 +26,7 @@
           <a class="nav-link" href="#">
             <i class="fa fa-home"></i>
             Inicio
-           
+
           </a>
         </li>
         <li class="nav-item">
@@ -37,7 +37,7 @@
             Inventario
           </a>
         </li>
-        
+
 
         <li class="nav-item">
           <a class="nav-link" href="Clientes/clientes.php">
@@ -48,21 +48,21 @@
           </a>
         </li>
         <li class="nav-item">
-                    <a class="nav-link" href="Categoria/categorias.php">
-                        <i class="fa fa-archive" aria-hidden="true">
-                            <span class="badge badge-danger"></span>
-                        </i>
-                        Categorías
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="ventas/venta.php">
-                        <i class="fa fa-money" aria-hidden="true">
-                            <span class="badge badge-danger"></span>
-                        </i>
-                        Venta
-                    </a>
-                </li>
+          <a class="nav-link" href="Categoria/categorias.php">
+            <i class="fa fa-archive" aria-hidden="true">
+              <span class="badge badge-danger"></span>
+            </i>
+            Categorías
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ventas/venta.php">
+            <i class="fa fa-money" aria-hidden="true">
+              <span class="badge badge-danger"></span>
+            </i>
+            Venta
+          </a>
+        </li>
       </ul>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -78,38 +78,114 @@
   </nav>
 
   <div class="dashboard">
-        <div class="sidebar">
-            <h4>Ventas</h4>
-            <div class="card-info">
-                <h2>$2,200</h2>
-                <i class="fas fa-credit-card fa-2x"></i>
-            </div>
-            <div class="card-info">
-                <h2>$12,029</h2>
-                <i class="fas fa-wallet fa-2x"></i>
-            </div>
-            <div class="actions">
-                <button>Decargar</button>
-            
-            </div>
+    <div class="sidebar">
+      <h4>Ventas</h4>
+      <div class="card-info">
+      <?php 
+          $servername = "localhost";
+          $username = "nombre_usuario";
+          $password = "contraseña";
+          $dbname = "nombre_base_de_datos";
+
+          // Crear conexión
+          $conn = mysqli_connect("localhost", "root", "", "fondacrud");
+
+          $sql = "SELECT SUM(COSTO_TOTAL) AS SUMA
+FROM ventas
+WHERE DATE(FECHA_VENTA) = CURDATE();";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              // Mostrar los datos en la tabla
+              while ($row = $result->fetch_assoc()) {
+                  echo "<p>" . $row['SUMA'] . "</p>";
+              }
+            }
+          ?>
+        <i class="fas fa-credit-card fa-2x"></i>
+      </div>
+      <div class="card-info">
+      <?php 
+          $servername = "localhost";
+          $username = "nombre_usuario";
+          $password = "contraseña";
+          $dbname = "nombre_base_de_datos";
+
+          // Crear conexión
+          $conn = mysqli_connect("localhost", "root", "", "fondacrud");
+
+          $sql = "SELECT SUM(COSTO_TOTAL) AS SUMA
+FROM ventas
+WHERE MONTH(FECHA_VENTA) = MONTH(CURDATE()) AND YEAR(FECHA_VENTA) = YEAR(CURDATE());";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              // Mostrar los datos en la tabla
+              while ($row = $result->fetch_assoc()) {
+                  echo "<p>" . $row['SUMA'] . "</p>";
+              }
+            }
+          ?>
+        <i class="fas fa-wallet fa-2x"></i>
+      </div>
+      <!-- <div class="actions">
+        <button>Decargar</button>
+
+      </div> -->
+    </div>
+
+    <div class="main-content">
+      <h3>Dashboard</h3>
+      <div class="circle-chart">
+        <div class="circle">
+          <?php 
+          $servername = "localhost";
+          $username = "nombre_usuario";
+          $password = "contraseña";
+          $dbname = "nombre_base_de_datos";
+
+          // Crear conexión
+          $conn = mysqli_connect("localhost", "root", "", "fondacrud");
+
+          $sql = "SELECT COUNT(*) as cantidad FROM productos";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              // Mostrar los datos en la tabla
+              while ($row = $result->fetch_assoc()) {
+                  echo "<p>" . $row['cantidad'] . "</p>";
+              }
+            }
+          ?>
+          <br> Productos
         </div>
 
-        <div class="main-content">
-            <h3>Dashboard</h3>
-            <div class="circle-chart">
-                <div class="circle" style="background-color:#ff6f91;">
-                    $1,392 <br> Ventas
-                </div>
-                <div class="circle" style="background-color:#6a82fb;">
-                     <br> Servicios
-                </div>
-                <div class="circle" style="background-color:#ff9f43;">
-                    49<br> Clientes
-                </div>
-            </div>
+        <div class="circle">
+        <?php 
+          $servername = "localhost";
+          $username = "nombre_usuario";
+          $password = "contraseña";
+          $dbname = "nombre_base_de_datos";
+
+          // Crear conexión
+          $conn = mysqli_connect("localhost", "root", "", "fondacrud");
+
+          $sql = "SELECT COUNT(*) as cantidad FROM clientes";
+          $result = $conn->query($sql);
+
+          if ($result->num_rows > 0) {
+              // Mostrar los datos en la tabla
+              while ($row = $result->fetch_assoc()) {
+                  echo "<p>" . $row['cantidad'] . "</p>";
+              }
+            }
+          ?>
+          <br> Clientes
+        </div>
+      </div>
 
 
-    
+
 </body>
 <script src="js/script.js"></script>
 

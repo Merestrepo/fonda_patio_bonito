@@ -10,9 +10,9 @@ $cliente = $_POST['cliente'];
 $tipo_venta = $_POST['tipo_venta'];
 $total = $_POST['total'];
 $productos = json_decode($_POST['carrito']);
-$fecha = date(format: 'm/d/Y');
+$fecha = date('d-m-Y h:i:s');
 
-$sql = "INSERT INTO ventas (IDX_TIPO_VENTA, IDX_CLIENTE, COSTO_TOTAL, FECHA_VENTA) VALUES ('$tipo_venta', '$cliente', '$total','$fecha')";
+$sql = "INSERT INTO ventas (IDX_TIPO_VENTA, IDX_CLIENTE, COSTO_TOTAL) VALUES ('$tipo_venta', '$cliente', '$total')";
 if ($conexion->query($sql) === TRUE) {
     $ultimo_id = $conexion->insert_id;
 

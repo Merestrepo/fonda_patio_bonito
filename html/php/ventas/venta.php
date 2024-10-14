@@ -9,7 +9,8 @@
     <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
-    <style>
+   
+   <style>
         #contenedorCarrito {
             scrollbar-width: thin;
             scrollbar-color: #57616b #343a40;
@@ -193,6 +194,14 @@
                             <span class="badge badge-danger"></span>
                         </i>
                         Venta
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../InformeVentas/informe-ventas.php">
+                        <i class="fa fa-money" aria-hidden="true">
+                            <span class="badge badge-danger"></span>
+                        </i>
+                        Informe de ventas
                     </a>
                 </li>
             </ul>
