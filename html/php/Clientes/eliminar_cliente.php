@@ -1,4 +1,5 @@
 <?php
+echo ("hola");
 // Conexión a la base de datos (debes tener tus credenciales correctas aquí)
 $conn = mysqli_connect("localhost", "root", "", "fondacrud");
 // Verificar la conexión

@@ -29,6 +29,25 @@ if ($conexion->query($sql) === TRUE) {
             echo "Error: " . $conexion->error;
         }
     }
+if($tipo_venta == "2"){
+    $sql = "SELECT Deuda FROM clientes WHERE id_cliente = '$cliente'";
+
+  $resultadoCliente = $conexion->query($sql);
+
+        while ($row = $resultadoCliente->fetch_assoc()) {
+
+            $DeudaActual = (int)$row['Deuda'];
+
+            $DeudaActual += (int)$total;
+
+            $sql = "UPDATE clientes SET Deuda = '$DeudaActual' WHERE id_cliente = '$cliente'";
+            
+            $resultadoActualizar = $conexion->query($sql);
+        }
+    }
+
+
+
     echo "Venta realizada correctamente";
 
 }

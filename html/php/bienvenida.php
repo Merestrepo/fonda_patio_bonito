@@ -160,6 +160,7 @@ WHERE MONTH(FECHA_VENTA) = MONTH(CURDATE()) AND YEAR(FECHA_VENTA) = YEAR(CURDATE
           <br> Productos
         </div>
 
+      
         <div class="circle">
         <?php 
           $servername = "localhost";
@@ -184,6 +185,7 @@ WHERE MONTH(FECHA_VENTA) = MONTH(CURDATE()) AND YEAR(FECHA_VENTA) = YEAR(CURDATE
         </div>
       </div>
 
+     
 
 
 </body>

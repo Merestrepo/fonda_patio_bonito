@@ -125,6 +125,7 @@
 
 
   
+
   .cabecera{
     display: flex;
     justify-content: space-between;
@@ -132,6 +133,10 @@
 }
 
 
+/*Filtro */
+#formularioBusqueda {
+    display: none; /* Inicialmente oculto */
+}
 
 label, select {
     display: block;
@@ -151,9 +156,6 @@ select {
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    position: relative;
-    float: left;
-    margin: 10px 20px 0px 0px;
 }
 
 #contenedorModal button:hover {
@@ -162,7 +164,7 @@ select {
 
 
 #btnDesplegarFormulario {
-  background: linear-gradient(135deg, #f491a8, #fc5c7d);
+    background-color: #2b47d2;
     color: white;
     padding: 10px 15px;
     border: none;

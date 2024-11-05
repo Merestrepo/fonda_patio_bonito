@@ -1,9 +1,12 @@
 @import url("//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
 
-
+.contenedor_clientes {
+    padding: 10px;
+}
 
 /* Navbar Bootstrap */
 
+/* Variables de color y estilos generales */
 .navbar-icon-top .navbar-nav .nav-link > .fa {
     position: relative;
     width: 36px;
@@ -125,6 +128,7 @@
 
 
   
+
   .cabecera{
     display: flex;
     justify-content: space-between;
@@ -222,74 +226,102 @@ button:hover {
 
 
 /* Contenedor de productos */
-
-.contenedor_productos{
-    background-color: rgb(236, 241, 243);
- 
+.contenedor_productos {
+    background-color: #f0f4f7; /* Color de fondo más suave */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-.tabla_seccion{
+/* Contenedor de la tabla con desplazamiento */
+.tabla_seccion {
     height: 650px;
     overflow: auto;
-    
+    border-radius: 50px; /* Bordes redondeados */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Sombra para la tabla */
 }
 
-table{
+/* Estilo general de la tabla */
+table {
     width: 100%;
-    table-layout: fixed;
-    min-width: 100hdw;
     border-collapse: collapse;
-    padding: 22px;
-    height: 10hdw;
+    background-color: #fff; /* Fondo blanco */
+    border-radius: 10px;
+    overflow: hidden;
 }
 
-thead tr{
+/* Cabecera de la tabla */
+thead tr {
     position: sticky;
     top: 0;
-    background-color: #3f6eef;
-    color: rgb(41, 44, 44);
-    font-size: 22px;
+    background-color: #5e626c; /* Color azul para la cabecera */
+    color: #ffffff; /* Texto blanco para mejor contraste */
+    font-size: 18px;
     text-align: center;
-    
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15); /* Sombra para la cabecera */
 }
 
-tbody{
-    border-bottom: 1px solid #dddd;
-    
-    word-break: break-all;
+/* Celdas de la cabecera */
+thead th {
+    padding: 15px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* Filas de la tabla */
+tbody tr {
     text-align: center;
-    
+    font-size: 16px;
+    color: #333;
+    transition: background-color 0.3s ease; /* Suavidad para el hover */
 }
 
-tbody tr{
-    border-bottom: 1px solid #9b8c8cdd;
-    height: 79px;
-
+/* Alternancia de color en las filas */
+tbody tr:nth-child(even) {
+    background-color: #f8f9fc;
 }
 
-tr:hover td{
-    color: rgb(44, 40, 44);
-    cursor: pointer;
-    background-color: rgb(142, 177, 200);
+/* Hover para filas */
+tbody tr:hover {
+    background-color: #e3e8f0; /* Color claro para el hover */
 }
 
-td button{
-    outline: none;
+/* Celdas de la tabla */
+tbody td {
+    padding: 15px;
+    border-bottom: 1px solid #e0e6ed; /* Bordes de fila */
+    word-wrap: break-word; /* Para que el texto se ajuste */
+}
+
+/* Botones de acción */
+button {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #ffffff;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    padding: 10px;
-    color: #f2f2f2;
+    transition: background-color 0.3s ease;
 }
 
+button:hover {
+    opacity: 0.9;
+}
+
+button i {
+    margin-right: 5px;
+}
+
+/* Estilos específicos para botones de edición y eliminación */
 td button:nth-child(1){
-    background-color: #a9b4e9;
+    background-color: #10b441;
 
 }
 td button:nth-child(2){
     background-color: rgb(194, 36, 36);
 
 }
+
 
 .paginacion{
     display: flex;
@@ -299,17 +331,3 @@ td button:nth-child(2){
     
 }
 
-.paginacion div{
-    padding: 10px;
-    border: 2px solid #d5d0d0;
-    width: 40px;
-    height: 40px;
-    border-radius: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #6a8dee;
-    box-shadow: 0px 0px 4px;
-    margin: 0 5px;
-    color: #3c3636;
-}
